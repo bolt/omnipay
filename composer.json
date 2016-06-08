@@ -1,0 +1,87 @@
+{
+    "name": "omnipay/omnipay",
+    "type": "library",
+    "description": "Omnipay library base package for Bolt",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gawain Lynch",
+            "email": "gawain.lynch@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "provide": {
+        "ircmaxell/password-compat": "*",
+        "omnipay/2checkout": "2.1.1",
+        "omnipay/authorizenet": "2.4.0",
+        "omnipay/buckaroo": "2.0.1",
+        "omnipay/cardsave": "2.1.2",
+        "omnipay/coinbase": "2.0.4",
+        "omnipay/common": "2.3.4",
+        "omnipay/dummy": "2.1.1",
+        "omnipay/eway": "2.2.1",
+        "omnipay/firstdata": "2.3.0",
+        "omnipay/gocardless": "2.2.0",
+        "omnipay/manual": "2.2.0",
+        "omnipay/migs": "2.1.1",
+        "omnipay/mollie": "3.0.5",
+        "omnipay/multisafepay": "2.3.1",
+        "omnipay/netaxept": "2.3.0",
+        "omnipay/netbanx": "2.1.1",
+        "omnipay/omnipay": "2.3.2",
+        "omnipay/payfast": "2.1.1",
+        "omnipay/payflow": "2.2.0",
+        "omnipay/paymentexpress": "2.2.0",
+        "omnipay/paypal": "2.5.4",
+        "omnipay/pin": "2.2.2",
+        "omnipay/sagepay": "2.3.1",
+        "omnipay/securepay": "2.1.0",
+        "omnipay/stripe": "2.3.3",
+        "omnipay/targetpay": "2.2.1",
+        "omnipay/worldpay": "2.2",
+        "symfony/event-dispatcher": "*",
+        "symfony/http-foundation": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-php54": "*",
+        "symfony/polyfill-php55": "*"
+    },
+    "config": {
+        "vendor-dir": "lib"
+    },
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\AuthorizeNet\\": "lib/omnipay/authorizenet/src",
+            "Omnipay\\Buckaroo\\": "lib/omnipay/buckaroo/src",
+            "Omnipay\\CardSave\\": "lib/omnipay/cardsave/src",
+            "Omnipay\\Coinbase\\": "lib/omnipay/coinbase/src",
+            "Omnipay\\Dummy\\": "lib/omnipay/dummy/src",
+            "Omnipay\\Eway\\": "lib/omnipay/eway/src",
+            "Omnipay\\FirstData\\": "lib/omnipay/firstdata/src",
+            "Omnipay\\GoCardless\\": "lib/omnipay/gocardless/src",
+            "Omnipay\\Manual\\": "lib/omnipay/manual/src",
+            "Omnipay\\Migs\\": "lib/omnipay/migs/src",
+            "Omnipay\\Mollie\\": "lib/omnipay/mollie/src",
+            "Omnipay\\MultiSafepay\\": "lib/omnipay/multisafepay/src",
+            "Omnipay\\Netaxept\\": "lib/omnipay/netaxept/src",
+            "Omnipay\\NetBanx\\": "lib/omnipay/netbanx/src",
+            "Omnipay\\Omnipay\\": "lib/omnipay/common/src",
+            "Omnipay\\PayFast\\": "lib/omnipay/payfast/src",
+            "Omnipay\\Payflow\\": "lib/omnipay/payflow/src",
+            "Omnipay\\PaymentExpress\\": "lib/omnipay/paymentexpress/src",
+            "Omnipay\\PayPal\\": "lib/omnipay/paypal/src",
+            "Omnipay\\Pin\\": "lib/omnipay/pin/src",
+            "Omnipay\\SagePay\\": "lib/omnipay/sagepay/src",
+            "Omnipay\\SecurePay\\": "lib/omnipay/securepay/src",
+            "Omnipay\\Stripe\\": "lib/omnipay/stripe/src",
+            "Omnipay\\TargetPay\\": "lib/omnipay/targetpay/src",
+            "Omnipay\\TwoCheckout\\": "lib/omnipay/2checkout/src",
+            "Omnipay\\WorldPay\\": "lib/omnipay/worldpay/src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.3.x-dev"
+        }
+    }
+}
