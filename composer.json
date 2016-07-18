@@ -14,8 +14,8 @@
     "provide": {
         "ircmaxell/password-compat": "*",
         "omnipay/2checkout": "2.1.1",
-        "omnipay/authorizenet": "2.4.0",
-        "omnipay/buckaroo": "2.0.1",
+        "omnipay/authorizenet": "2.4.2",
+        "omnipay/buckaroo": "2.0.2",
         "omnipay/cardsave": "2.1.2",
         "omnipay/coinbase": "2.0.4",
         "omnipay/common": "2.3.4",
