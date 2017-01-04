@@ -17,6 +17,13 @@ use Omnipay\Common\Message\AbstractResponse;
 class Response extends AbstractResponse
 {
     /**
+     * Request id
+     *
+     * @var string URL
+     */
+    protected $requestId = null;
+    
+    /**
      * Is the transaction successful?
      *
      * @return bool
@@ -28,7 +35,9 @@ class Response extends AbstractResponse
 
     /**
      * Get the charge reference from the response of FetchChargeRequest.
-     *
+     * 
+     * @deprecated 2.3.3:3.0.0 duplicate of \Omnipay\Stripe\Message\Response::getTransactionReference()
+     * @see \Omnipay\Stripe\Message\Response::getTransactionReference()
      * @return array|null
      */
     public function getChargeReference()
@@ -300,5 +309,23 @@ class Response extends AbstractResponse
         }
 
         return null;
+    }
+    
+    /**
+     * @return string
+     */
+    public function getRequestId()
+    {
+        return $this->requestId;
+    }
+
+    /**
+     * Set request id
+     *
+     * @return AbstractRequest provides a fluent interface.
+     */
+    public function setRequestId($requestId)
+    {
+        $this->requestId = $requestId;
     }
 }
