@@ -20,6 +20,7 @@
             "Omnipay\\Buckaroo\\": "lib/omnipay/buckaroo/src",
             "Omnipay\\CardSave\\": "lib/omnipay/cardsave/src",
             "Omnipay\\Coinbase\\": "lib/omnipay/coinbase/src",
+            "Omnipay\\Common\\": "lib/omnipay/common/src",
             "Omnipay\\Dummy\\": "lib/omnipay/dummy/src",
             "Omnipay\\Eway\\": "lib/omnipay/eway/src",
             "Omnipay\\FirstData\\": "lib/omnipay/firstdata/src",
