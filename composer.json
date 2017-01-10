@@ -45,6 +45,9 @@
             "Omnipay\\WorldPay\\": "lib/omnipay/worldpay/src"
         }
     },
+    "provide": {
+        "symfony/event-dispatcher": "2.9.0"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "2.3.x-dev"
