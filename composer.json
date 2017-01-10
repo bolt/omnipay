@@ -15,12 +15,17 @@
         "vendor-dir": "lib"
     },
     "autoload": {
+        "psr-0": {
+            "Omnipay\\Common\\" : "lib/omnipay/common/src"
+        },
+        "classmap": [
+            "lib/omnipay/common/src/Omnipay/Omnipay.php"
+        ],
         "psr-4": {
             "Omnipay\\AuthorizeNet\\": "lib/omnipay/authorizenet/src",
             "Omnipay\\Buckaroo\\": "lib/omnipay/buckaroo/src",
             "Omnipay\\CardSave\\": "lib/omnipay/cardsave/src",
             "Omnipay\\Coinbase\\": "lib/omnipay/coinbase/src",
-            "Omnipay\\Common\\": "lib/omnipay/common/src",
             "Omnipay\\Dummy\\": "lib/omnipay/dummy/src",
             "Omnipay\\Eway\\": "lib/omnipay/eway/src",
             "Omnipay\\FirstData\\": "lib/omnipay/firstdata/src",
